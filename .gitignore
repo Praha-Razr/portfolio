@@ -1,0 +1,10 @@
+# Environment & OS
+.DS_Store
+Thumbs.db
+
+# Backup folders
+.backup-water-droplet/
+.backup-*/
+
+# Local dev logs
+*.log

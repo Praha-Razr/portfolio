@@ -1,0 +1,1042 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Prahadeesh Kalimuthu — Information Technology Student & Software Developer. Specializing in Full-Stack Web Development, Interactive UI/UX, and Impactful Community Solutions.">
+  <title>Prahadeesh Kalimuthu | Software Developer & IT Student</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Preloader: Organic Blooming Sprout & Unfurling Leaf (Nature) -->
+  <aside id="preloader" class="preloader" aria-hidden="true">
+    <div class="sprout-stage">
+      <!-- Ambient Botanical Life Glow -->
+      <div class="sprout-aura"></div>
+
+      <!-- Growing Plant / Botanical Shoot SVG -->
+      <svg class="sprout-svg" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <!-- Stem Gradient -->
+          <linearGradient id="stemGrad" x1="100" y1="170" x2="100" y2="35" gradientUnits="userSpaceOnUse">
+            <stop offset="0%" stop-color="#059669" />
+            <stop offset="50%" stop-color="#10b981" />
+            <stop offset="85%" stop-color="#34d399" />
+            <stop offset="100%" stop-color="#6ee7b7" />
+          </linearGradient>
+
+          <!-- Left Leaf Gradient -->
+          <linearGradient id="leafLeftGrad" x1="98" y1="105" x2="55" y2="65" gradientUnits="userSpaceOnUse">
+            <stop offset="0%" stop-color="#047857" stop-opacity="0.95" />
+            <stop offset="60%" stop-color="#10b981" stop-opacity="0.9" />
+            <stop offset="100%" stop-color="#6ee7b7" stop-opacity="0.95" />
+          </linearGradient>
+
+          <!-- Right Leaf Gradient -->
+          <linearGradient id="leafRightGrad" x1="100" y1="85" x2="145" y2="45" gradientUnits="userSpaceOnUse">
+            <stop offset="0%" stop-color="#047857" stop-opacity="0.95" />
+            <stop offset="60%" stop-color="#10b981" stop-opacity="0.9" />
+            <stop offset="100%" stop-color="#a7f3d0" stop-opacity="0.95" />
+          </linearGradient>
+
+          <!-- Top Bud Gradient -->
+          <linearGradient id="budGrad" x1="100" y1="52" x2="100" y2="24" gradientUnits="userSpaceOnUse">
+            <stop offset="0%" stop-color="#10b981" />
+            <stop offset="100%" stop-color="#a7f3d0" />
+          </linearGradient>
+
+          <!-- Dewdrop Highlight -->
+          <radialGradient id="dewGlow" cx="40%" cy="35%" r="50%">
+            <stop offset="0%" stop-color="#ffffff" stop-opacity="0.95" />
+            <stop offset="60%" stop-color="#38bdf8" stop-opacity="0.8" />
+            <stop offset="100%" stop-color="#0284c7" stop-opacity="0" />
+          </radialGradient>
+        </defs>
+
+        <!-- Base Soil / Earth Mound Horizon -->
+        <path class="soil-line" d="M 65 170 Q 100 166 135 170" stroke="rgba(16, 185, 129, 0.4)" stroke-width="2" stroke-linecap="round" />
+        <ellipse cx="100" cy="170" rx="14" ry="3.5" fill="rgba(16, 185, 129, 0.15)" filter="blur(2px)" />
+
+        <!-- Growing Central Stem -->
+        <path class="sprout-stem" d="M 100 170 C 99 140, 96 112, 100 78 C 101 68, 100 58, 100 50" stroke="url(#stemGrad)" stroke-width="3" stroke-linecap="round" />
+
+        <!-- Left Leaf: Blade, Vein & Contour -->
+        <g class="leaf-group leaf-left">
+          <path class="leaf-blade" d="M 98 105 C 78 100, 58 84, 52 64 C 66 61, 88 74, 98 105 Z" fill="url(#leafLeftGrad)" stroke="rgba(110, 231, 183, 0.45)" stroke-width="1" />
+          <path class="leaf-vein" d="M 98 105 C 80 91, 66 75, 52 64" stroke="rgba(255, 255, 255, 0.5)" stroke-width="1.2" stroke-linecap="round" />
+        </g>
+
+        <!-- Right Leaf: Blade, Vein & Contour -->
+        <g class="leaf-group leaf-right">
+          <path class="leaf-blade" d="M 100 85 C 120 78, 140 64, 148 44 C 134 43, 112 56, 100 85 Z" fill="url(#leafRightGrad)" stroke="rgba(167, 243, 208, 0.45)" stroke-width="1" />
+          <path class="leaf-vein" d="M 100 85 C 118 71, 134 55, 148 44" stroke="rgba(255, 255, 255, 0.5)" stroke-width="1.2" stroke-linecap="round" />
+        </g>
+
+        <!-- Top Shoot / Tender Sprout Bud -->
+        <g class="leaf-group bud-shoot">
+          <path d="M 100 52 C 94 40, 97 29, 100 24 C 103 29, 106 40, 100 52 Z" fill="url(#budGrad)" stroke="rgba(167, 243, 208, 0.6)" stroke-width="1" />
+        </g>
+
+        <!-- Dewdrop at Sprout Tip -->
+        <g class="dewdrop-wrap">
+          <circle cx="100" cy="23" r="3.2" fill="url(#dewGlow)" />
+          <circle cx="99.2" cy="22.2" r="0.9" fill="#ffffff" />
+        </g>
+      </svg>
+    </div>
+  </aside>
+
+  <!-- Header & Navigation -->
+  <header class="site-header" id="top">
+    <div class="container header-container">
+      <a href="#top" class="brand-logo" aria-label="Prahadeesh Kalimuthu Portfolio Home">
+        <span class="logo-accent">&lt;</span>PK<span class="logo-accent">/&gt;</span>
+        <span class="brand-text">Prahadeesh Kalimuthu</span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span class="hamburger"></span>
+      </button>
+
+      <nav class="site-nav" id="siteNav">
+        <ul class="nav-list">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#hackathons" class="nav-link">Hackathons</a></li>
+          <li><a href="#certifications" class="nav-link">Certifications</a></li>
+          <li><a href="#contact" class="nav-link nav-cta">Get in Touch</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="badge-pill">
+            <span class="status-dot"></span> Available for Tech Internships & Hackathons
+          </div>
+          <h1 class="hero-title">
+            Hi, I'm <span class="text-gradient">Prahadeesh Kalimuthu</span>
+          </h1>
+          <p class="hero-subtitle">
+            Information Technology Student &amp; <span class="typing-role" id="typingRole">Software Developer</span><span class="typing-cursor">|</span>
+          </p>
+          <p class="hero-bio">
+            Welcome to my digital workspace! I'm an IT student and full-stack developer passionate about building high-impact web and mobile products, competing in national hackathons, and transforming bold ideas into functional reality. Explore my projects below!
+          </p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">Explore Projects</a>
+            <a href="#contact" class="btn btn-secondary">Contact Me</a>
+          </div>
+          <div class="hero-stats">
+            <div class="stat-item">
+              <span class="stat-number" data-target="8.95" data-decimals="2">8.95</span>
+              <span class="stat-label">SKCET CGPA</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number" data-target="4" data-suffix="+">4+</span>
+              <span class="stat-label">Major Projects</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number" data-target="7" data-suffix="+">7+</span>
+              <span class="stat-label">Premier Hackathons</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number" data-target="40" data-suffix="+">40+</span>
+              <span class="stat-label">Certifications</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="sonic-avatar-stage">
+            <!-- Central Resonant Profile Orb with Alexa & Sound Vibration Waves -->
+            <div class="profile-orb-wrapper">
+              <!-- Concentric Alexa Sound Vibration Waves -->
+              <div class="sonic-wave wave-3" aria-hidden="true"></div>
+              <div class="sonic-wave wave-2" aria-hidden="true"></div>
+              <div class="sonic-wave wave-1" aria-hidden="true"></div>
+
+              <!-- Glowing Conic Alexa Halo Ring -->
+              <div class="alexa-glow-ring" aria-hidden="true"></div>
+
+              <!-- Orbiting Particle Nodes -->
+              <div class="alexa-orbit-node node-1" aria-hidden="true"></div>
+              <div class="alexa-orbit-node node-2" aria-hidden="true"></div>
+
+              <!-- Profile Image Orb (Enlarged 250px) -->
+              <div class="profile-orb-container">
+                <img
+                  src="profile.png"
+                  onerror="this.onerror=null;this.src='file_00000000f12881f498feed2df1a9b5f4.png';"
+                  alt="Prahadeesh Kalimuthu — Information Technology Student & Software Developer"
+                  class="profile-img"
+                  width="250"
+                  height="250"
+                  loading="eager"
+                />
+              </div>
+            </div>
+
+            <!-- Soundwave Equalizer Capsule (Alexa / Music Voice Assistant Response) -->
+            <div class="sonic-eq-capsule">
+              <div class="eq-bars" aria-hidden="true">
+                <span class="eq-bar bar-1"></span>
+                <span class="eq-bar bar-2"></span>
+                <span class="eq-bar bar-3"></span>
+                <span class="eq-bar bar-4"></span>
+                <span class="eq-bar bar-5"></span>
+                <span class="eq-bar bar-6"></span>
+                <span class="eq-bar bar-7"></span>
+                <span class="eq-bar bar-8"></span>
+                <span class="eq-bar bar-9"></span>
+              </div>
+              <div class="eq-meta">
+                <span class="eq-pulse-indicator"></span>
+                <span class="eq-text">Acoustic Resonance // Active</span>
+              </div>
+            </div>
+
+            <!-- Floating Code Console -->
+            <div class="sonic-console">
+              <div class="console-header">
+                <div class="console-dots">
+                  <span class="dot red"></span>
+                  <span class="dot yellow"></span>
+                  <span class="dot green"></span>
+                </div>
+                <span class="console-title">razr.config</span>
+              </div>
+              <code>// Building the future, line by line</code>
+              <div class="console-tags">
+                <span>#hyperactive</span> <span>#relentless</span> <span>#razr</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-tag">Overview</span>
+          <h2 class="section-title">About Me</h2>
+          <p class="section-lead">A snapshot of my journey, technical vision, and passions</p>
+        </header>
+
+        <div class="about-grid">
+          <div class="about-card primary-card">
+            <div class="card-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+            </div>
+            <h3>Who I Am</h3>
+            <p>
+              I am an Information Technology undergraduate at <strong>Sri Krishna College of Engineering and Technology (SKCET)</strong>, Coimbatore (Batch 2025–Present, maintaining an <strong>8.95 CGPA</strong>).
+            </p>
+            <p>
+              My engineering philosophy revolves around building human-centric software. I specialize in translating complex community workflows—from grievance reporting to emergency dispatch—into robust, intuitive web and mobile solutions.
+            </p>
+            <div class="about-card-tags">
+              <span>B.Tech IT</span>
+              <span>SKCET Coimbatore</span>
+              <span>Human-Centric</span>
+            </div>
+          </div>
+
+          <div class="about-card">
+            <div class="card-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg>
+            </div>
+            <h3>Academic &amp; Leadership Honors</h3>
+            <p>
+              Proud alumnus of <strong>SRB AKD Dharmaraja Boys' Higher Secondary School, Rajapalayam</strong> (2018–2025), graduating as the <strong>1st Rank Holder</strong> and recognized as <strong>School First</strong> for 10th, 11th, and 12th standards consecutively.
+            </p>
+            <p>
+              Elected as <strong>School Pupil Leader (SPL)</strong>, served as <strong>Class Representative</strong>, and active member of the <strong>Discipline Committee</strong>, driving student governance and spearheading school-wide events.
+            </p>
+            <div class="about-card-tags">
+              <span>1st Rank (10th, 11th, 12th)</span>
+              <span>School Pupil Leader (SPL)</span>
+              <span>Discipline Committee</span>
+            </div>
+          </div>
+
+          <div class="about-card">
+            <div class="card-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+            </div>
+            <h3>Creative Pursuits</h3>
+            <p>
+              Beyond academics, I am an enthusiastic visual storyteller and photographer running <a href="https://instagram.com/itz_razr_clicks" target="_blank" rel="noopener noreferrer" class="link-inline">@itz_razr_clicks</a>. Photography sharpens my eye for visual hierarchy, composition, and aesthetic UI/UX balance.
+            </p>
+            <p>
+              Driven by curiosity and high-energy competitive sprints, I channel creative direction into rapid prototyping, designing memorable user interfaces with smooth micro-interactions and pixel-perfect design systems.
+            </p>
+            <div class="about-card-tags">
+              <span>@itz_razr_clicks</span>
+              <span>Visual Composition</span>
+              <span>UI/UX Design</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="section education-section" id="education">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-tag">Academic Background</span>
+          <h2 class="section-title">Education</h2>
+          <p class="section-lead">Rigorous theoretical foundation combined with practical engineering</p>
+        </header>
+
+        <div class="timeline">
+          <!-- College Timeline Item -->
+          <article class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-meta">
+                <span class="timeline-period">2025 — Present</span>
+                <span class="timeline-badge">CGPA: 8.95 / 10.0</span>
+              </div>
+              <h3 class="timeline-title">B.Tech in Information Technology</h3>
+              <h4 class="timeline-institution">Sri Krishna College of Engineering and Technology (SKCET), Coimbatore</h4>
+              <p class="timeline-desc">
+                Focusing on full-stack web architectures, distributed systems, responsive interfaces, and collaborative development. Consistently ranked in top academic percentiles while actively representing the college in national-level technical hackathons.
+              </p>
+              <div class="coursework-chips">
+                <span>Full-Stack Web Development</span>
+                <span>Database Management Systems</span>
+                <span>Object-Oriented Programming</span>
+                <span>Computer Networks</span>
+                <span>Software Engineering</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- School Timeline Item -->
+          <article class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-meta">
+                <span class="timeline-period">2018 — 2025</span>
+                <span class="timeline-badge">1st Rank Holder &bull; School First</span>
+              </div>
+              <h3 class="timeline-title">Higher Secondary &amp; Secondary Education (HSC / SSLC)</h3>
+              <h4 class="timeline-institution">SRB AKD Dharmaraja Boys' Higher Secondary School, Rajapalayam</h4>
+              <p class="timeline-desc">
+                Graduated with top academic honors, achieving <strong>1st Rank Holder (School First)</strong> consecutively across 10th, 11th, and 12th standards. Demonstrated exemplary student governance and institutional leadership as <strong>School Pupil Leader (SPL)</strong>, <strong>Class Representative</strong>, and <strong>Discipline Committee Member</strong>.
+              </p>
+              <div class="coursework-chips">
+                <span>School First (10th, 11th, 12th)</span>
+                <span>School Pupil Leader (SPL)</span>
+                <span>Class Representative</span>
+                <span>Discipline Committee Member</span>
+                <span>1st Rank Holder</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-tag">Technical Arsenal</span>
+          <h2 class="section-title">Skills &amp; Technologies</h2>
+          <p class="section-lead">Languages, frameworks, and developer toolkits I utilize</p>
+        </header>
+
+        <div class="skills-grid">
+          <div class="skill-category-card">
+            <h3 class="skill-category-title">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+              Programming Languages
+            </h3>
+            <ul class="skill-pill-list">
+              <li><span class="skill-pill">C</span></li>
+              <li><span class="skill-pill">C++</span></li>
+              <li><span class="skill-pill">Python</span></li>
+              <li><span class="skill-pill">Java</span></li>
+              <li><span class="skill-pill">JavaScript (ES6+)</span></li>
+              <li><span class="skill-pill">SQL</span></li>
+            </ul>
+          </div>
+
+          <div class="skill-category-card">
+            <h3 class="skill-category-title">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+              Frontend &amp; MERN Stack
+            </h3>
+            <ul class="skill-pill-list">
+              <li><span class="skill-pill">HTML5 (Semantic)</span></li>
+              <li><span class="skill-pill">CSS3 (Grid/Flexbox)</span></li>
+              <li><span class="skill-pill">React.js</span></li>
+              <li><span class="skill-pill">DOM Manipulation</span></li>
+              <li><span class="skill-pill">Responsive Design</span></li>
+              <li><span class="skill-pill">RESTful APIs</span></li>
+            </ul>
+          </div>
+
+          <div class="skill-category-card">
+            <h3 class="skill-category-title">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+              Tools &amp; Workflow
+            </h3>
+            <ul class="skill-pill-list">
+              <li><span class="skill-pill">Git &amp; GitHub</span></li>
+              <li><span class="skill-pill">VS Code</span></li>
+              <li><span class="skill-pill">Vite</span></li>
+              <li><span class="skill-pill">npm</span></li>
+              <li><span class="skill-pill">Linux CLI</span></li>
+              <li><span class="skill-pill">Figma Basics</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section (CSS Grid) -->
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-tag">Featured Work</span>
+          <h2 class="section-title">Projects Showcase</h2>
+          <p class="section-lead">Mission-driven engineering built with modern web technologies</p>
+        </header>
+
+        <!-- CSS Grid layout for projects -->
+        <div class="projects-grid">
+          <!-- Project 1: Civic-Connect -->
+          <article class="project-card">
+            <div class="project-header">
+              <span class="project-tag">Civic Tech</span>
+            </div>
+            <h3 class="project-title">Civic-Connect</h3>
+            <h4 class="project-subtitle">Citizen Grievance Redressal &amp; Municipal Triage Platform</h4>
+            <p class="project-description">
+              A full-stack civic engagement and transparency web platform connecting citizens with municipal departments to report public infrastructure issues with live GPS geotagging and real-time resolution SLAs.
+            </p>
+            <ul class="project-features">
+              <li>Geo-tagged citizen incident dispatch with live coordinates &amp; image verification</li>
+              <li>Automated department triage &amp; ticket routing with strict escalation triggers</li>
+              <li>Real-time status tracking with automated milestone updates and SMS alerts</li>
+              <li>Administrative analytics dashboard visualizing municipal problem heatmaps</li>
+            </ul>
+            <div class="project-tech">
+              <span>React.js</span>
+              <span>Node.js</span>
+              <span>Express.js</span>
+              <span>MongoDB</span>
+              <span>RESTful APIs</span>
+              <span>Leaflet/GPS</span>
+              <span>Cloudinary</span>
+              <span>JWT Auth</span>
+              <span>CSS3 Grid</span>
+              <span>Git</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/Praha-Razr/Civic-Connect" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                GitHub Repo
+              </a>
+              <a href="#contact" class="btn btn-primary btn-sm">Inquire Demo</a>
+            </div>
+          </article>
+
+          <!-- Project 2: Sahaaya Grid -->
+          <article class="project-card">
+            <div class="project-header">
+              <span class="project-tag">Disaster Relief &bull; Crowds</span>
+            </div>
+            <h3 class="project-title">Sahaaya Grid</h3>
+            <h4 class="project-subtitle">Real-Time Emergency Reporting &amp; Volunteer Micro-Dispatch</h4>
+            <p class="project-description">
+              A zero-dependency, real-time emergency reporting and volunteer micro-dispatch web platform designed for high-density crowds and festivals, operating reliably even on weak 2G/3G networks without requiring app installation.
+            </p>
+            <ul class="project-features">
+              <li>Zero-install QR incident reporting in &lt;5s via native MediaDevices &amp; Canvas APIs</li>
+              <li>Server-Sent Events (SSE) sub-second telemetry across Civilian, Volunteer, and Command consoles</li>
+              <li>Spatiotemporal Clustering Engine grouping duplicate panic alerts within 5-min sliding windows</li>
+              <li>Skill-and-proximity matcher with 1s watchdog ticker enforcing strict 30s volunteer SLA</li>
+            </ul>
+            <div class="project-tech">
+              <span>Node.js</span>
+              <span>Vanilla JS (ES6+)</span>
+              <span>HTML5/CSS3</span>
+              <span>Server-Sent Events (SSE)</span>
+              <span>Web Audio API</span>
+              <span>Canvas API</span>
+              <span>MediaDevices API</span>
+              <span>PBKDF2 Hashing</span>
+              <span>Git</span>
+              <span>Render</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/Praha-Razr/sahaaya-grid" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                GitHub Repo
+              </a>
+              <a href="https://sahaaya-grid.onrender.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                Live Demo
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 3: Waste Guard AI -->
+          <article class="project-card">
+            <div class="project-header">
+              <span class="project-tag">CleanTech &bull; AI/ML</span>
+            </div>
+            <h3 class="project-title">Waste Guard AI</h3>
+            <h4 class="project-subtitle">Computer-Vision Waste Intelligence &amp; Segregation</h4>
+            <p class="project-description">
+              An intelligent computer-vision waste segregation and monitoring platform designed to classify municipal waste (biodegradable, recyclable, hazardous) at the source with citizen incentives and bin telemetry.
+            </p>
+            <ul class="project-features">
+              <li>Real-time webcam image classification powered by computer-vision deep learning models</li>
+              <li>Automated segregation categorization (Wet, Dry, Recyclable, Hazardous) with confidence scores</li>
+              <li>Smart bin capacity sensor telemetry simulation to prevent urban overflow hazards</li>
+              <li>Civic gamification and tokenized incentive rewards for verified waste segregation</li>
+            </ul>
+            <div class="project-tech">
+              <span>Python</span>
+              <span>TensorFlow/Keras</span>
+              <span>OpenCV</span>
+              <span>FastAPI</span>
+              <span>React.js</span>
+              <span>REST APIs</span>
+              <span>Ultrasonic Telemetry</span>
+              <span>CSS Flexbox</span>
+              <span>Git</span>
+              <span>Render</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/Praha-Razr/WasteGuardAl" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                GitHub Repo
+              </a>
+              <a href="#contact" class="btn btn-primary btn-sm">Inquire Demo</a>
+            </div>
+          </article>
+
+          <!-- Project 4: UniServ -->
+          <article class="project-card">
+            <div class="project-header">
+              <span class="project-tag">Cooperative Gig Economy</span>
+            </div>
+            <h3 class="project-title">UniServ</h3>
+            <h4 class="project-subtitle">Cooperative On-Demand Service Assurance Platform</h4>
+            <p class="project-description">
+              A cross-platform on-demand service assurance platform developed with React Native and React 19 on the Multi-State Cooperative Societies framework, replacing exploitative aggregator commissions with an 80/10/6/4 fair wage model and PayPal payments.
+            </p>
+            <ul class="project-features">
+              <li>Dual-OTP zero-trust physical handshake (Start &amp; Completion OTP) verifying service delivery</li>
+              <li>Integrated PayPal payment gateway &amp; automated cooperative escrow milestone payouts</li>
+              <li>Real-time simulated GPS dispatch tracking and live provider arrival updates</li>
+              <li>Multimodal diagnostic intake supporting audio notes, photo/video, and speech recognition</li>
+            </ul>
+            <div class="project-tech">
+              <span>React Native</span>
+              <span>Expo SDK 57</span>
+              <span>React 19</span>
+              <span>JavaScript</span>
+              <span>PayPal API</span>
+              <span>React Navigation v7</span>
+              <span>Context API</span>
+              <span>AsyncStorage</span>
+              <span>Node.js</span>
+              <span>Web Audio &amp; Speech</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/Praha-Razr/UniServ" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                GitHub Repo
+              </a>
+              <a href="https://uni-serv.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                Live Demo
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Hackathons & Co-Curricular Section -->
+    <section class="section hackathons-section" id="hackathons">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-tag">Competitions &amp; Sprints</span>
+          <h2 class="section-title">Hackathon Track Record</h2>
+          <p class="section-lead">High-intensity sprint prototyping, problem analysis, and national arena challenges</p>
+        </header>
+
+        <!-- Hackathons Grid (7 Cards: Featured National Flagship + 3x2 Symmetric Grid) -->
+        <div class="hackathon-grid">
+          <!-- Card 1: Flipkart GRID 8.0 (Featured Flagship) -->
+          <article class="hackathon-card featured-card">
+            <div class="hack-badge-row">
+              <span class="hack-badge badge-national">National Semi-Finalist</span>
+              <span class="hack-date">National Flagship</span>
+            </div>
+            <h3>Flipkart GRID 8.0</h3>
+            <h4 class="hack-subtitle">Autonomous Robotics &amp; Intelligent Logistics Track • Flipkart</h4>
+            <p>
+              Advanced to the National Semi-Finals in Flipkart's premier engineering arena. Architected high-throughput, low-latency pipelines addressing real-world autonomous logistics and smart supply chain efficiency under stringent evaluation criteria.
+            </p>
+            <div class="hack-tags">
+              <span>National Semi-Finalist</span>
+              <span>Intelligent Logistics</span>
+              <span>High-Throughput Tech</span>
+              <span>Flipkart Engineering</span>
+            </div>
+          </article>
+
+          <!-- Card 2: Smart India Hackathon 2026 -->
+          <article class="hackathon-card">
+            <div class="hack-badge-row">
+              <span class="hack-badge badge-lead">Team Lead • Pre-Screening Cleared</span>
+            </div>
+            <h3>Smart India Hackathon 2026</h3>
+            <h4 class="hack-subtitle">Internal Hackathon • Sri Krishna College of Engg &amp; Tech</h4>
+            <p>
+              Led the team through the SIH pre-screening round into the internal hackathon for Problem Statement 26089. Architected UniServ, a cooperative gig-services platform featuring worker verification, location-based dispatch, and digital escrow payouts.
+            </p>
+            <div class="hack-tags">
+              <span>Team Lead</span>
+              <span>PS 26089 (UniServ)</span>
+              <span>Cooperative Platform</span>
+              <span>Product Pitching</span>
+            </div>
+          </article>
+
+          <!-- Card 3: Samsung Solve for Tomorrow 2026 -->
+          <article class="hackathon-card">
+            <div class="hack-badge-row">
+              <span class="hack-badge badge-innovation">Design Thinking • Social Innovation</span>
+            </div>
+            <h3>Samsung Solve for Tomorrow 2026</h3>
+            <h4 class="hack-subtitle">Samsung India • Youth Innovation Challenge</h4>
+            <p>
+              Participated in Samsung's flagship social innovation initiative, applying Design Thinking principles to discover community challenges and prototype empathetic, tech-driven solutions for a better tomorrow.
+            </p>
+            <div class="hack-tags">
+              <span>Samsung India</span>
+              <span>Design Thinking</span>
+              <span>Social Innovation</span>
+              <span>Youth Challenge</span>
+            </div>
+          </article>
+
+          <!-- Card 4: PayPal AI Hackathon -->
+          <article class="hackathon-card">
+            <div class="hack-badge-row">
+              <span class="hack-badge badge-fintech">Fintech Sprints • AI Settlement</span>
+            </div>
+            <h3>PayPal AI Hackathon</h3>
+            <h4 class="hack-subtitle">Cross-Border Escrow &amp; AI Settlement • PayPal APIs</h4>
+            <p>
+              Engineered UniServ Pay, an autonomous AI-audited cross-border escrow marketplace for diaspora families. Integrated PayPal Orders v2 pre-authorization holds, deterministic 4-way split payouts, and an LLM audit agent.
+            </p>
+            <div class="hack-tags">
+              <span>PayPal APIs</span>
+              <span>Autonomous AI Agent</span>
+              <span>Fintech Escrow</span>
+              <span>Split Disbursements</span>
+            </div>
+          </article>
+
+          <!-- Card 5: HACK-KERALA at TECHAVAM 2026 -->
+          <article class="hackathon-card">
+            <div class="hack-badge-row">
+              <span class="hack-badge badge-lead">Team Lead • Crowd Safety</span>
+            </div>
+            <h3>HACK-KERALA @ TECHAVAM 2026</h3>
+            <h4 class="hack-subtitle">TechnoCrats / TECHAVAM • SKCET</h4>
+            <p>
+              Served as Team Lead for Sahaaya Grid, an emergency crowd-safety platform for mass gatherings. Prototyped a zero-install QR incident reporting architecture and proximity-based volunteer dispatch engine with automated SLA tickers.
+            </p>
+            <div class="hack-tags">
+              <span>Team Lead</span>
+              <span>Sahaaya Grid</span>
+              <span>Crowd Safety</span>
+              <span>Real-Time Dispatch</span>
+            </div>
+          </article>
+
+          <!-- Card 6: Adobe University Hackathon -->
+          <article class="hackathon-card">
+            <div class="hack-badge-row">
+              <span class="hack-badge badge-lead">Team Lead • Assessment &amp; Sprints</span>
+            </div>
+            <h3>Adobe University Hackathon</h3>
+            <h4 class="hack-subtitle">Adobe &amp; Unstop</h4>
+            <p>
+              Led team participation in Adobe's nationwide competitive engineering challenge. Tackled timed coding assessments, complex algorithmic problem sets, and rapid analytical challenges demonstrating high-velocity collaboration.
+            </p>
+            <div class="hack-tags">
+              <span>Team Lead</span>
+              <span>Adobe &amp; Unstop</span>
+              <span>Algorithmic Sprints</span>
+              <span>Analytical Problem Solving</span>
+            </div>
+          </article>
+
+          <!-- Card 7: CodeHeist -->
+          <article class="hackathon-card">
+            <div class="hack-badge-row">
+              <span class="hack-badge badge-lead">Team Lead • Quiz &amp; Coding</span>
+            </div>
+            <h3>CodeHeist</h3>
+            <h4 class="hack-subtitle">Technical Quiz, Creative Puzzles &amp; Coding Challenge</h4>
+            <p>
+              Served as Team Lead in this quiz-based hackathon challenge. Guided the team through creative programming language puzzles, technical trivia, and timed coding problem-solving rounds under strict competitive constraints.
+            </p>
+            <div class="hack-tags">
+              <span>Team Lead</span>
+              <span>Technical Quiz</span>
+              <span>Creative Puzzles</span>
+              <span>Coding Challenges</span>
+            </div>
+          </article>
+        </div>
+
+        <!-- Co-Curricular Block: Workshops & Paper Presentations -->
+        <div class="cocurricular-block">
+          <header class="cocurricular-header">
+            <h3 class="cocurricular-title">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+              Workshops &amp; Paper Presentations
+            </h3>
+          </header>
+
+          <div class="cocurricular-grid">
+            <!-- Workshop Card -->
+            <article class="hackathon-card">
+              <div class="hack-badge-row">
+                <span class="hack-badge badge-national">AI Workshop • Hands-On</span>
+                <span class="hack-date">30 Oct 2026</span>
+              </div>
+              <h3>Vibe Coding Workshop 2026</h3>
+              <h4 class="hack-subtitle">StartupTN &amp; Google for Developers • NICHE, Kanyakumari</h4>
+              <p>
+                Hands-on immersion into AI-assisted software development and agentic engineering workflows. Built accelerated prototypes leveraging modern developer tools, exploring prompt design, automated scaffolding, and rapid production deployment.
+              </p>
+              <div class="hack-tags">
+                <span>Google for Developers</span>
+                <span>StartupTN</span>
+                <span>AI-Assisted Dev</span>
+                <span>NICHE Kanyakumari</span>
+              </div>
+            </article>
+
+            <!-- Paper Presentation Card -->
+            <article class="hackathon-card">
+              <div class="hack-badge-row">
+                <span class="hack-badge badge-lead">Research Paper Presentation</span>
+                <span class="hack-date">Jan 2026</span>
+              </div>
+              <h3>CRYPTERA 2026 Symposium</h3>
+              <h4 class="hack-subtitle">Coimbatore Institute of Technology (CIT)</h4>
+              <p>
+                Authored and presented a technical research paper at CIT's prestigious national-level symposium in January 2026. Successfully defended the research architecture, implementation methodology, and technological relevance before an expert faculty panel.
+              </p>
+              <div class="hack-tags">
+                <span>CIT Coimbatore</span>
+                <span>Paper Presentation</span>
+                <span>Research &amp; Defense</span>
+                <span>Jan 2026</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certifications Section (Coursera Verified Credentials) -->
+    <section class="section cert-section" id="certifications">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-tag">Continuous Learning</span>
+          <h2 class="section-title">Coursera Certifications</h2>
+          <p class="section-lead">40 professional credentials completed across AI Agents, Generative AI, Python &amp; Data Analytics</p>
+        </header>
+
+        <!-- Category Filter Tabs -->
+        <div class="cert-filter-bar">
+          <button class="cert-filter-btn active" data-filter="all">All Credentials (40)</button>
+          <button class="cert-filter-btn" data-filter="agents">AI Agents (11)</button>
+          <button class="cert-filter-btn" data-filter="prompts">Prompt Engineering (10)</button>
+          <button class="cert-filter-btn" data-filter="apps">AI Workflows (9)</button>
+          <button class="cert-filter-btn" data-filter="data">Python &amp; Data (10)</button>
+        </div>
+
+        <!-- 4 Thematic Domain Cards (2x2 Balanced Grid) -->
+        <div class="cert-grid">
+          <!-- Card 1: AI Agents & Autonomous Systems -->
+          <article class="cert-card" data-category="agents">
+            <div class="cert-card-header">
+              <div class="cert-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a4 4 0 0 1 4 4v1a4 4 0 0 1-8 0V6a4 4 0 0 1 4-4z"/><rect x="4" y="11" width="16" height="10" rx="3"/><circle cx="9" cy="16" r="1.5"/><circle cx="15" cy="16" r="1.5"/></svg>
+              </div>
+              <div class="cert-header-info">
+                <h3 class="cert-domain-title">AI Agents &amp; Autonomous Systems</h3>
+                <span class="cert-count-badge">11 Credentials</span>
+              </div>
+            </div>
+            <ul class="cert-list">
+              <li><svg class="check-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>Introduction to AI Agents</li>
+              <li><svg class="check-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>Agent Fundamentals</li>
+              <li><svg class="check-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>Deploy Your First Agent</li>
+              <li><svg class="check-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>Add Agent Capabilities With Tools</li>
+              <li><svg class="check-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>Manage Agent Memory and State</li>
+              <li><svg class="check-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>Optimize Agent Behavior</li>
+              <li><svg class="check-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>Build and Deploy Agents in Production</li>
+              <li><svg class="check-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>Enterprise Agents and Use Cases</li>
+              <li><svg class="check-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>Gen AI Agents: Transform Your Organization</li>
+              <li><svg class="check-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>Build Agents with Gemini Enterprise</li>
+              <li><svg class="check-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>Build Your First Agent with Gemini Enterprise</li>
+            </ul>
+          </article>
+
+          <!-- Card 2: Generative AI & Prompt Engineering -->
+          <article class="cert-card" data-category="prompts">
+            <div class="cert-card-header">
+              <div class="cert-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+              </div>
+              <div class="cert-header-info">
+                <h3 class="cert-domain-title">Generative AI &amp; Prompt Engineering</h3>
+                <span class="cert-count-badge">10 Credentials</span>
+              </div>
+            </div>
+            <ul class="cert-list">
+              <li><svg class="check-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>Essentials of Prompt Engineering</li>
+              <li><svg class="check-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>Discover the Art of Prompting</li>
+              <li><svg class="check-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>Start Writing Prompts like a Pro</li>
+              <li><svg class="check-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>Design Prompts for Everyday Work Tasks</li>
+              <li><svg class="check-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>Introduction to AI</li>
+              <li><svg class="check-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>AI Fundamentals</li>
+              <li><svg class="check-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>Human-Centered AI</li>
+              <li><svg class="check-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>Use AI Responsibly</li>
+              <li><svg class="check-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>Use AI as a Creative or Expert Partner</li>
+              <li><svg class="check-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>Stay Ahead of the AI Curve</li>
+            </ul>
+          </article>
+
+          <!-- Card 3: AI Development & Product Workflows -->
+          <article class="cert-card" data-category="apps">
+            <div class="cert-card-header">
+              <div class="cert-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+              </div>
+              <div class="cert-header-info">
+                <h3 class="cert-domain-title">AI Workflows &amp; Prototyping</h3>
+                <span class="cert-count-badge">9 Credentials</span>
+              </div>
+            </div>
+            <ul class="cert-list">
+              <li><svg class="check-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>LLM-empowered Python Programming for AI</li>
+              <li><svg class="check-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>AI for App Building</li>
+              <li><svg class="check-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>AI for App Deployment</li>
+              <li><svg class="check-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>Maximize Productivity With AI Tools</li>
+              <li><svg class="check-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>AI for Content Creation</li>
+              <li><svg class="check-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>AI for Writing and Communicating</li>
+              <li><svg class="check-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>AI for Brainstorming and Planning</li>
+              <li><svg class="check-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>AI for Research and Insights</li>
+              <li><svg class="check-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>Professional Skills: Leading Through Effective Communication</li>
+            </ul>
+          </article>
+
+          <!-- Card 4: Python, Data Analytics & Databases -->
+          <article class="cert-card" data-category="data">
+            <div class="cert-card-header">
+              <div class="cert-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+              </div>
+              <div class="cert-header-info">
+                <h3 class="cert-domain-title">Python, Data Analytics &amp; Databases</h3>
+                <span class="cert-count-badge">10 Credentials</span>
+              </div>
+            </div>
+            <ul class="cert-list">
+              <li><svg class="check-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>Python for Data Science &amp; AI: Hands-On Development</li>
+              <li><svg class="check-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>Programming for Everybody (Getting Started with Python)</li>
+              <li><svg class="check-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>Crash Course on Python</li>
+              <li><svg class="check-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>Data Analytics Foundations: Turn Data into Insights</li>
+              <li><svg class="check-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>AI for Data Analysis</li>
+              <li><svg class="check-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>Speed Up Data Analysis and Presentation Building</li>
+              <li><svg class="check-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>Introduction to Relational Databases (RDBMS)</li>
+              <li><svg class="check-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>SQL for Beginners</li>
+              <li><svg class="check-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>Excel and Copilot Fundamentals</li>
+              <li><svg class="check-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>Introduction to HTML5</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-tag">Get in Touch</span>
+          <h2 class="section-title">Let's Connect &amp; Collaborate</h2>
+          <p class="section-lead">Have an internship opportunity, project collaboration, or hackathon team invite? Drop a message!</p>
+        </header>
+
+        <div class="contact-grid">
+          <!-- Contact Info Column -->
+          <div class="contact-info">
+            <h3 class="contact-info-title">Contact Channels</h3>
+            <p class="contact-info-desc">
+              Feel free to reach out via phone, email, or connect across developer platforms and social profiles.
+            </p>
+
+            <ul class="contact-list">
+              <li class="contact-item">
+                <div class="contact-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                </div>
+                <div>
+                  <span class="contact-label">Phone</span>
+                  <a href="tel:+918778197031" class="contact-value">+91 8778197031</a>
+                </div>
+              </li>
+
+              <li class="contact-item">
+                <div class="contact-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                </div>
+                <div>
+                  <span class="contact-label">Email</span>
+                  <a href="mailto:prahadeeshkalimuthu@gmail.com" class="contact-value">prahadeeshkalimuthu@gmail.com</a>
+                </div>
+              </li>
+
+              <li class="contact-item">
+                <div class="contact-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                </div>
+                <div>
+                  <span class="contact-label">Location</span>
+                  <span class="contact-value">Coimbatore, Tamil Nadu, India</span>
+                </div>
+              </li>
+            </ul>
+
+            <h4 class="socials-heading">Profiles &amp; Coding Handles</h4>
+            <div class="social-links-grid">
+              <a href="https://github.com/Praha-Razr" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="GitHub Profile">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                <span>GitHub (Praha-Razr)</span>
+              </a>
+
+              <a href="https://www.linkedin.com/in/prahadeesh-kalimuthu-9b3b6a353/" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="LinkedIn Profile">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                <span>LinkedIn</span>
+              </a>
+
+              <a href="https://leetcode.com/u/Praha-Razr" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="LeetCode Profile">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                <span>LeetCode</span>
+              </a>
+
+              <a href="https://hackerrank.com/profile/Praha_Razr" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="HackerRank Profile">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <span>HackerRank</span>
+              </a>
+
+              <a href="https://instagram.com/itz_razr_clicks" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Instagram Photography">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                <span>@itz_razr_clicks</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Functional UI Contact Form -->
+          <div class="contact-form-wrapper">
+            <h3 class="form-title">Send a Direct Message</h3>
+            <p class="form-subtitle">Fill in the fields below to email me directly at prahadeeshkalimuthu@gmail.com.</p>
+
+            <form
+              class="contact-form"
+              id="contactForm"
+              action="https://formsubmit.co/prahadeeshkalimuthu@gmail.com"
+              method="POST"
+              novalidate
+            >
+              <!-- FormSubmit Email Routing Configuration -->
+              <input type="hidden" name="_captcha" value="false">
+              <input type="hidden" name="_template" value="table">
+              <input type="hidden" name="_subject" value="New Portfolio Message from Direct Contact Form">
+              <div class="form-group">
+                <label for="senderName" class="form-label">Full Name <span class="required">*</span></label>
+                <input type="text" id="senderName" name="name" class="form-input" placeholder="e.g. Alex Morgan" required>
+                <span class="field-error" id="nameError"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="senderEmail" class="form-label">Email Address <span class="required">*</span></label>
+                <input type="email" id="senderEmail" name="email" class="form-input" placeholder="e.g. alex@example.com" required>
+                <span class="field-error" id="emailError"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="subject" class="form-label">Subject</label>
+                <input type="text" id="subject" name="subject" class="form-input" placeholder="Project Inquiry / Hackathon / Internship">
+              </div>
+
+              <div class="form-group">
+                <label for="message" class="form-label">Message <span class="required">*</span></label>
+                <textarea id="message" name="message" rows="5" class="form-textarea" placeholder="Describe your message or opportunity..." required></textarea>
+                <span class="field-error" id="messageError"></span>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block" id="submitBtn">
+                <span>Send Message</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+              </button>
+
+              <div class="form-feedback" id="formFeedback" role="alert" aria-live="polite"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-brand">
+        <a href="#top" class="brand-logo">
+          <span class="logo-accent">&lt;</span>PK<span class="logo-accent">/&gt;</span>
+        </a>
+        <p class="footer-tagline">Crafting modern web software for real-world impact.</p>
+      </div>
+      <div class="footer-copy">
+        <p>&copy; 2026 Prahadeesh Kalimuthu. Built with Semantic HTML5 &amp; Modern CSS3.</p>
+        <p class="footer-sub">Sri Krishna College of Engineering and Technology (SKCET)</p>
+      </div>
+      <a href="#top" class="back-to-top" aria-label="Back to top of page">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg>
+      </a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
